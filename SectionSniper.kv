@@ -1,0 +1,43 @@
+#:kivy 1.0.9
+
+<Display>:
+    canvas:
+        Rectangle:
+            source: 'Info page.png'
+            size: self.width, self.height
+
+    Button:
+        pos: self.parent.width / 8 * 3, self.parent.height / 2 - 30
+        font_size: 48
+        height: self.parent.height / 5
+        width: self.parent.width / 4
+        background_color: (0.0, 0.0, 0.0, 0.0)
+        on_press: root.button_pressed()
+
+    TextInput:
+        id: department
+        multiline: False
+        orientation: "horizontal"
+        pos: self.parent.width / 2 + 10, 380
+        height: 25
+        width: 100
+        font_size: 12
+
+    TextInput:
+        id: course_num
+        multiline: False
+        orientation: "horizontal"
+        pos: self.parent.width / 2 + 10, 345
+        height: 25
+        width: 100
+        font_size: 12
+
+    TextInput:
+        id: sec_num
+        multiline: False
+        orientation: "horizontal"
+        pos: self.parent.width / 2 + 10, 310
+        height: 25
+        width: 100
+        font_size: 12
+
